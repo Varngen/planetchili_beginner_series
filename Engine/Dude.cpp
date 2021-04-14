@@ -346,32 +346,30 @@ void Dude::Draw( Graphics& gfx ) const
 
 void Dude::Update( const Keyboard & kbd )
 {
-	if (kbd.KeyIsPressed(VK_LSHIFT))
+	if (kbd.KeyIsPressed(VK_SHIFT))
 	{
-		speedmodf = 1;
+		speed = 2;
 	}
 	else
 	{
-		speedmodf = 0;
+		speed = 1;
 	}
-
-	//speed = speed + speedmodf;
-
+	
 	if( kbd.KeyIsPressed( VK_RIGHT ) )
 	{
-		x += speed + speedmodf;
+		x += speed;
 	}
 	if( kbd.KeyIsPressed( VK_LEFT ) )
 	{
-		x -= speed + speedmodf;
+		x -= speed;
 	}
 	if( kbd.KeyIsPressed( VK_DOWN ) )
 	{
-		y += speed + speedmodf;
+		y += speed;
 	}
 	if( kbd.KeyIsPressed( VK_UP ) )
 	{
-		y -= speed + speedmodf;
+		y -= speed;
 	}
 }
 
