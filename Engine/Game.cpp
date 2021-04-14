@@ -28442,6 +28442,7 @@ void Game::ComposeFrame()
 	}
 	else
 	{
+		gfx.DrawCircle(200, 200, 100, Colors::Blue);
 		goal.Draw( gfx );
 		for( int i = 0; i < nPoo; ++i )
 		{
