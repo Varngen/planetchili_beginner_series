@@ -16,7 +16,8 @@ public:
 private:
 	int x = 400;
 	int y = 300;
-	static constexpr int speed = 1;
+	int speed = 1;
+	int speedmodf = 0;
 	static constexpr int width = 20;
 	static constexpr int height = 20;
 };

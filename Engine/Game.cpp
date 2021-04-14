@@ -80,6 +80,12 @@ void Game::UpdateModel()
 			isStarted = true;
 		}
 	}
+
+	if (wnd.kbd.KeyIsPressed(VK_ESCAPE))
+	{
+		exit(0);
+	}
+
 }
 
 void Game::DrawGameOver( int x,int y )
